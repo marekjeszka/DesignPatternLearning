@@ -1,5 +1,12 @@
 # DesignPatternLearning
 
+## Structural patterns
+### Adapter
+Helps to access existing interface from another interface (in another words: makes existing classes work with others) without modifying it's source code. Adapter contains an instance of original class.
+How to compare this pattern with Decorator? Both are similar, but Decorator adds additional functionality to the original class.
+Core example: java.util.Arrays#asList()
+Example: In legacy code Line and Rectangle don't have common interface. Adapter for these classes can implement Shape interface (that contains draw() method).
+
 ## Behavioral patterns
 ### Visitor
 Represent an operation to be performed on elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
