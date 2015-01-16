@@ -23,3 +23,10 @@ Also known as policy pattern. Enables an algorithm's behavior to be selected at 
 Core example: java.util.Comparator#compare
 
 Example: solving some algorithm. Interface declares solve() method, but each of it's implementators defines it. Client invokes solve() method and implementation is selected according to object type of used implementator.
+
+### Memento
+There are two patterns that could be called Memento:
+- ability to restore an object to its previous state
+- object that has methods which internally changes the state of the whole instance
+
+Core example: java.util.Date (internally represented by long, thus setter methods change the whole instance)
