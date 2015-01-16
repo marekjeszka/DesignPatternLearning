@@ -10,6 +10,13 @@ Core example: java.util.Arrays#asList()
 
 Example: In legacy code Line and Rectangle don't have common interface. Adapter for these classes can implement Shape interface (that contains draw() method).
 
+### Bridge
+Decouples an abstraction from its implementation so that the two can vary independently. Client class can decide which concrete implementation to use, if there is more than one.
+
+Example: A Bus (refined abstraction) implements Vehicle (abstraction) and maintains reference to Engine (implementor) that is implemented by Big Engine (concrete implementor).
+
+Another example: There are two concrete implementations of drawing API (implementor). Abstract class Shape maintains reference to drawing API and few Shape's implementations exist i.e. Circle, Rectangle.
+
 ## Behavioral patterns
 ### Visitor
 Represents an operation to be performed on elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
