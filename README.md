@@ -37,3 +37,12 @@ There are two patterns that could be called Memento:
 - object that has methods which internally changes the state of the whole instance
 
 Core example: java.util.Date (internally represented by long, thus setter methods change the whole instance)
+
+## Creational patterns
+
+### Factory Method
+Recognizeable by creational methods returning an implementation of an abstract/interface type.
+
+Core example: Calendar#getInstance()
+
+Example: different type of employees that extends common abstract class. Parent has implementation of how to prepare a travel (book a flight, book a hotel, rent a car), but specific employees implement these getters for flight/hotel/car selecting which they plan to use (e.g. 3 or 5 star hotel).
